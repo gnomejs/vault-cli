@@ -3,7 +3,7 @@
     "version": "0.0.0",
     "exports": {
         ".": "./mod.ts",
-        "./vault": "./vault.ts",
+        "./cli": "./cli.ts",
         "./login": "./login.ts"
     },
     "compilerOptions": {
@@ -26,14 +26,12 @@
     "publish": {
         "include": [
             "mod.ts",
-            "vault.ts",
+            "cli.ts",
             "login.ts",
             "README.md",
             "LICENSE.md",
             "deno.json"
         ]
     },
-    "imports": {
-        "@gnome/exec": "jsr:@gnome/exec@^0.4.1"
-    }
+    "imports": { "@gnome/exec": "jsr:@gnome/exec@^0.4.4" }
 }

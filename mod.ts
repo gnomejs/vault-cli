@@ -9,19 +9,19 @@
  *
  * ```typescript
  * import { vault } from "@gnome/vault-cli";
- * 
+ *
  * // runs the vault login command and outputs to stdout and stderror
  * await vault({ splat: { command: "login" }, tokenOnly: true } }).run();
- * 
+ *
  * const result = await vault({ splat: { command: "login" }, tokenOnly: true });
  * console.log(result.code);
  * console.log(result.text());
- * 
+ *
  * const result = await vault(["login", "-token-only"]);
  * console.log(result.code);
  * console.log(result.text());
  * ```
  * @module
  */
-export * from "./vault.ts";
+export * from "./cli.ts";
 export * from "./login.ts";
